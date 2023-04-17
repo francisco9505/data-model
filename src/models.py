@@ -17,10 +17,12 @@ class User(Base):
 
 
 class Post(Base):
-         __tablename__ = 'post'
-id = Column(Integer, primary_key=True)
-user_id = Column(Integer,ForeignKey('User.id'))
+        __tablename__ = 'post'
+        id = Colum(Integer, primary_key=True)
+        user_id = Colum(Integer, ForeignKey('User.id'))
 
+        
+       
 
 class Comment(Base):
         __tablename__ = 'Comment'
